@@ -13,10 +13,11 @@
     <section class="page-header">
       <h1 class="project-name">Test a Perceptual Phenomenon</h1>
       <h2 class="project-tagline">Udacity Data Analysis Project 1</h2>
-      <a href="https://github.com/baocongchen/Test-a-Perceptual-Phenomenon/blob/master/stroopdata.csv" class="btn">Download Data</a>
     </section>
 
     <section class="main-content">
+    <p>In this project, we will investigate a classic phenomenon from experimental psychology called the Stroop Effect. We will learn a little bit about the experiment, create a hypothesis regarding the outcome of the task, then go through the task. We will then look at some data collected from others who have performed the same task and will compute some statistics describing the results. Finally, we will interpret the results in terms of our hypotheses.</p>
+    <a href="https://github.com/baocongchen/Test-a-Perceptual-Phenomenon/blob/master/stroopdata.csv"><div class="btn" style="color: blue">Download Data</div></a>
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. What is our independent variable? What is our dependent variable?</h3>
 
@@ -31,7 +32,13 @@
 </div>
 
 <p>H0: the time it takes to name the ink colors is the same for both condition</p>
-<p>Ha: the time it takes to name the ink colors in each condition is different</p>
+<p>HA: the time it takes to name the ink colors in each condition is different</p>
+In other words: 
+<div class="jumbotron">
+  H0: µ1 = µ2
+  <br>HA: µ1 ≠ µ2
+</div>
+
 <p>The statistical test we're going to use here is a 2 tailed one sample t-test, because the distributions are nearly normal and we are comparing 2 dependent samples of data</p>
 
 <h3>
@@ -59,7 +66,14 @@
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?</h3>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<p>
+  <ul>
+    <li>Confidence Interval: lower limit = -18.03, upper limit = 2.1</li>
+    <li>t critical value: 2.07</li>
+    <li>t statistic: 1.64</li>
+  </ul>
+  Our t statistic is less than t critical value, so we fail to reject the null hypotheses. We conclude that the congruent/incongruent condition does not affect the time it takes to name the ink colors.
+</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/baocongchen/Test-a-Perceptual-Phenomenon">Test-a-perceptual-phenomenon</a> is maintained by <a href="https://github.com/baocongchen">baocongchen</a>.</span>
