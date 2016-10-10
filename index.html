@@ -31,15 +31,15 @@
   <img src="incongruent_distribution.png" alt="incongruent distribution">
 </div>
 
-<p>H0: the time it takes to name the ink colors is the same for both condition</p>
-<p>HA: the time it takes to name the ink colors in each condition is different</p>
+<p>H0: the population mean response time is the same for both condition</p>
+<p>HA: the population mean response time in each condition is different</p>
 In other words: 
 <div class="jumbotron">
   H0: µ1 = µ2
   <br>HA: µ1 ≠ µ2
 </div>
 
-<p>The statistical test we're going to use here is a 2 tailed one sample t-test, because the distributions are nearly normal and we are comparing 2 dependent samples of data</p>
+<p>Because the sample size is small (n=24 is less than 30) and the population standard deviation is not known, so our test statistic has a t-distribution, plus the distributions are nearly normal and we are comparing 2 dependent samples of data, the appropriate statistical test we're going to use here is a 2 tailed dependent t-test</p>
 
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.</h3>
@@ -48,12 +48,12 @@ In other words:
   <header style="font-weight: bold">Congruent</header>
   <ul class="well">
     <li>Mean: 14.05</li>
-    <li>Standard Deviation: 3.48</li>
+    <li>Standard Deviation: 3.56</li>
   </ul>
   <header style="font-weight: bold">Incongruent</header>
   <ul class="well">
     <li>Mean: 22.02</li>
-    <li>Standard Deviation: 4.70</li>
+    <li>Standard Deviation: 4.80</li>
   </ul>
 </p>
 
@@ -68,11 +68,11 @@ In other words:
 
 <p>
   <ul>
-    <li>Confidence Interval: lower limit = -18.03, upper limit = 2.1</li>
+    <li>Confidence Interval: lower limit = -10.01, upper limit = 2.1</li>
     <li>t critical value: 2.07</li>
-    <li>t statistic: 1.64</li>
+    <li>t statistics: 8.02</li>
   </ul>
-  Our t statistic is less than t critical value, so we fail to reject the null hypotheses. We conclude that the congruent/incongruent condition does not affect the time it takes to name the ink colors.
+  Our t statistics is greater than t critical value, so we reject the null hypotheses. We conclude that the congruent/incongruent condition does affect the time it takes to name the ink colors.
 </p>
 
       <footer class="site-footer">
